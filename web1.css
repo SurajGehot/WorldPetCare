@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
+}
+
+nav {
+    top: 0;
+    position: sticky;
+    background-color: rgb(255, 247, 215);
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: rgb(104, 129, 4);
+    text-decoration: none;
+
+}
+
+.logo img {
+    width: 5vw;
+}
+
+ul {
+
+    list-style: none;
+    display: flex;
+    gap: 64px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(104, 129, 4);
+    font-weight: lighter;
+
+}
+
+
+.list {
+    font-size: 26px;
+    padding-left: 3%;
+}
+
+
+.logo {
+    /* margin-top: 1px; */
+    /* padding-left: 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(96, 149, 96);
+}
+
+.logo p {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+.logo :nth-child(1) {
+    font-size: 48px;
+}
+
+.p1 {
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+}
+
+.image {
+    width: 5px;
+
+}
+
+button {
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    gap: 18px;
+    padding-right: 4px;
+    /* align-items: center; */
+
+
+}
+
+.btn button {
+    height: 4vh;
+    width: 5vw;
+    border-radius: 12px;
+    background-color: rgb(251, 237, 183);
+    font-size: 18px;
+    color: rgb(104, 129, 4);
+
+
+}
+
+.btn button:hover {
+    background-color: #68f672ab;
+    color: black;
+
+}
+
+.search input {
+    height: 3vh;
+    border-radius: 12px;
+}
+
+.search input::placeholder {
+    font-size: 20px;
+    text-align: justify;
+    padding: 1px;
+
+}
+
+.search input {
+    height: 3.5vh;
+    width: 15vw;
+    border-radius: 17px;
+    background-color: rgba(228, 227, 225, 0.427);
+    border-color: antiquewhite;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.search :hover {
+    background-color: rgba(239, 221, 120, 0.142);
+}
+
+.search input[type=search] {
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-align: start;
+    padding: 5px;
+    font-size: 20px;
+    color: rgba(109, 106, 102, 0.929);
+}
+
+.mic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: inherit;
+    font-size: 30px;
+    gap: 36px;
+}
+
+.header b {
+    color: rgb(5, 218, 255);
+}
+
+.header p {
+    font-size: 25px;
+    color: rgb(91, 117, 121);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 10%;
+
+}
+
+.learn {
+    padding-left: 10%;
+}
+
+.more {
+    background-color: rgb(78, 246, 190);
+    height: 6vh;
+    width: 9vw;
+    border-radius: 12%;
+    font-size: 70%;
+    color: rgba(124, 139, 152, 0.815);
+}
+
+.learn :hover {
+    background-color: rgb(22, 243, 169);
+    color: rgba(46, 94, 60, 0.831);
+    box-shadow: 1px 2px 3px rgb(84, 166, 232);
+}
+
+.us {
+    height: 320px;
+    background-color: rgb(255, 255, 0.);
+
+    h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    color: rgb(88, 97, 106);
+}
+
+.adjust {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.us img {
+    width: 3vw;
+
+}
+
+.us p {
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 19px;
+    color: rgba(88, 97, 106, 0.527);
+}
+
+.bgb {
+    background-image: url(senior-dog-and-cat-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.stickers {
+    height: 920px;
+    gap: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 240px;
+    img{
+        border-radius: 18px;
+    }
+
+    .next a {
+        color: rgb(15, 15, 15);
+        text-decoration: none;
+        padding-top: 50px;
+        height: 80px;
+        transition: all 500ms ease 0s;
+
+
+
+    }
+    h4{
+        font-weight: 400;
+    }
+    
+
+   
+
+    p {
+        color: rgba(78, 74, 74, 0.844);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .next >a:hover {
+        color: rgb(5, 152, 42);
+        transition: all 500ms ease 0s;
+        animation-delay: 7s inherit;
+
+    }
+
+
+}
+
+.sticker1 {
+    transition: transform 1s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    img{
+        width: 100%;
+    }
+}
+
+
+
+.sticker1:hover {
+    transform: scale(1.1);
+}
