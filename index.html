@@ -1,120 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>world pet care</title>
-    <link rel="stylesheet" href="web1.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Pet Care | Compassionate Veterinary &amp; Pet Care Services</title>
+  <meta
+    name="description"
+    content="World Pet Care offers routine check-ups, veterinary help, and emergency care for your dog, cat, or companion animal. Book an appointment online today."
+  />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <nav>
+  <!-- ===================== Header / Navigation ===================== -->
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <div class="logo">
+        <a href="#home">
+          <img src="images/logo.png" alt="World Pet Care logo" />
+          <span class="logo-text">
+            <span>World</span>
+            <span>Pet Care</span>
+          </span>
+        </a>
+      </div>
 
+      <ul class="nav-list" id="navList">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#appointment">Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-        <div class="logo">
-            <a href="web1.html">
-                <img src="Final-Logo.png" alt="logo">
-                <p>World</p>
-                <p>Pet care</p>
-            </a>
+      <div class="nav-actions">
+        <form class="search-form" id="searchForm" role="search">
+          <label class="sr-only" for="siteSearch">Search services</label>
+          <input
+            type="search"
+            id="siteSearch"
+            placeholder="Search services…"
+            autocomplete="off"
+          />
+        </form>
+        <button type="button" class="btn btn-ghost" data-modal-open="login">
+          Log In
+        </button>
+        <button type="button" class="btn btn-primary" data-modal-open="signup">
+          Sign Up
+        </button>
+      </div>
 
-        </div>
-        <div class="list">
-            <ul>
-                <li><a href="web1.html">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">services</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">contacts</a></li>
-                <li><a href="">Query</a></li>
-            </ul>
-        </div>
-
-        <div class="btn">
-            <div class="search">
-                <input type="search" placeholder="Search">
-            </div>
-            <button>Login</button>
-            <button>Sign Up</button>
-        </div>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navList"
+      >
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+  </header>
 
-    <main>
-        <!-- <div class="Heading">
-            
-        </div> -->
-        <div class="p1">
-            <div class="mic">
-                <div class="header">
-                    <h1>We <b> Care</b>For Your Pet</h1>
-                    <p>Instantly breakout into full speed gallop across the house for no reason
-                        <br> stretch, for scratch the box lick the other cats.
-                    </p>
-                </div>
-                <div class="learn">
-                    <button class="more">Learn More</button>
-
-                </div>
-            </div>
+  <main>
+    <!-- ===================== Hero ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>We <em>Care</em> for Your Pet</h1>
+        <p>
+          From routine check-ups to after-hours emergencies, our licensed
+          veterinarians and pet-loving staff treat every visit, walk, and
+          wagging tail like it's the only one that matters.
+        </p>
+        <div class="hero-actions">
+          <a href="#appointment" class="btn btn-primary">Book an Appointment</a>
+          <a href="#services" class="btn-secondary-link">See our services</a>
         </div>
-        <hr>
+      </div>
+    </section>
 
+    <hr class="section-divider" />
 
+    <!-- ===================== Why Choose Us ===================== -->
+    <section class="why-us" id="why-us">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <img class="icon" src="images/pawprint.png" alt="" aria-hidden="true" />
+        <p>
+          Every pet that walks through our doors gets an unhurried exam, a
+          clear explanation of what's going on, and a care plan you can
+          actually stick to &mdash; backed by a team that remembers your
+          pet's name.
+        </p>
+      </div>
+      <div class="why-us-banner" role="img" aria-label="A senior dog and cat resting together"></div>
+    </section>
 
-        <div class="us">
-            <div class="adjust">
-                <h1>Why Choose Us</h1>
+    <hr class="section-divider" />
 
-                <img src="pawprint.png" alt="icon">
-
-                <div class="para">
-                    <p> <b> Thug cat destroy couch eat the fat cats food chirp at birds lie on your belly and </p>
-                    <p id="para2">purr when you are asleep with tail in the air.</p></b>
-                </div>
-
-            </div>
-            <div class="bgb"></div>
-        </div>
-        <div class="stickers">
-
-            <div class="sticker1"><a href=""><img src="1 (1).jpg" alt="image"></a>
-                <h4 class="next"><a href="">CARE ADVICE</a></h4>
-                <p>Meow for food, then when human fills food dish, take a <br> few bites of food and continue meow for
-                    food,</p>
-                <h4 class="next"><a href="#"> READ MORE >></a></h4>
-            </div>
-
-            <div class="sticker1"><a href=""><img src="2.jpg" alt="image"></a>
-                <h4 class="next"><a href=""> VITERINERY HELP</a></h4>
-                <p>Meow for food, then when human fills food dish, take a <br> few bites of food and continue meow for
-                    food,</p>
-                <h4 class="next"><a href="#"> READ MORE >></a></h4>
-            </div>
-
-            <div class="sticker1"><a href=""><img src="3.jpg" alt="image"></a>
-                <h4 class="next"><a href="">EMERGENCY SERVICE</a></h4>
-                <p>Meow for food, then when human fills food dish, take a <br> few bites of food and continue meow for
-                    food,</p>
-                <h4 class="next"><a href="#"> READ MORE >></a></h4>
-            </div>
-
-        </div>
-        <hr>
-
-        <div class="appoint">
-
+    <!-- ===================== Services ===================== -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head center">
+          <p class="kicker">What we offer</p>
+          <h2>Care for every stage of your pet's life</h2>
+          <p>
+            Three ways we look after the animals in your family, from a
+            quick question to a middle-of-the-night emergency.
+          </p>
         </div>
 
-    </main>
+        <div class="service-grid" id="serviceGrid">
+          <article class="service-card" data-service-name="Care Advice">
+            <div class="thumb">
+              <img
+                src="images/service-care-advice.jpg"
+                alt="A veterinarian speaking with a pet owner holding her dog"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <h3>Care Advice</h3>
+              <p>
+                Nutrition, grooming, and behaviour guidance tailored to your
+                pet's breed, age, and temperament &mdash; so small questions
+                never turn into big problems.
+              </p>
+              <a
+                href="#appointment"
+                class="read-more"
+                data-service="Care Advice"
+                >Book this service &gt;&gt;</a
+              >
+            </div>
+          </article>
 
+          <article class="service-card" data-service-name="Veterinary Checkup">
+            <div class="thumb">
+              <img
+                src="images/service-veterinary-help.jpg"
+                alt="A veterinarian examining a cat's mouth during a checkup"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <h3>Veterinary Checkup</h3>
+              <p>
+                Routine exams, vaccinations, and dental care from licensed
+                vets who take the time to explain every finding in plain
+                language.
+              </p>
+              <a
+                href="#appointment"
+                class="read-more"
+                data-service="Veterinary Checkup"
+                >Book this service &gt;&gt;</a
+              >
+            </div>
+          </article>
 
+          <article class="service-card" data-service-name="Emergency Care">
+            <div class="thumb">
+              <img
+                src="images/service-emergency-care.jpg"
+                alt="Two veterinary staff carefully treating an injured dog's paw"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <h3>Emergency Care</h3>
+              <p>
+                Urgent injuries and sudden illness handled fast, with a
+                dedicated line so you're never left waiting on hold in a
+                crisis.
+              </p>
+              <a
+                href="#appointment"
+                class="read-more"
+                data-service="Emergency Care"
+                >Book this service &gt;&gt;</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- ===================== About ===================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-media">
+          <img
+            src="images/about-us.jpg"
+            alt="A young child gently greeting a large, friendly dog outdoors"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-text">
+          <p class="kicker">About us</p>
+          <h2>People who happen to be very good with animals</h2>
+          <p>
+            World Pet Care started as a single neighbourhood clinic with one
+            simple idea: treat every animal the way you'd want your own pet
+            treated. Today that same philosophy guides every check-up,
+            phone call, and late-night emergency we handle &mdash; calm
+            hands, honest advice, and no rushing you out the door.
+          </p>
+          <div class="stat-row">
+            <div class="stat">
+              <h3>12+</h3>
+              <span>Years in practice</span>
+            </div>
+            <div class="stat">
+              <h3>3,200+</h3>
+              <span>Pets cared for</span>
+            </div>
+            <div class="stat">
+              <h3>24/7</h3>
+              <span>Emergency line</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <hr class="section-divider" />
 
+    <!-- ===================== Shop ===================== -->
+    <section class="shop" id="shop">
+      <div class="container">
+        <div class="shop-banner">
+          <img
+            src="images/shop-banner.webp"
+            alt="A happy dog and cat walking together through a sunlit field"
+          />
+          <div class="shop-banner-content">
+            <h2>Everything your pet needs, in one place</h2>
+            <p>
+              Our in-store shop is stocked with vet-approved food, toys, and
+              wellness essentials. Online ordering is on its way &mdash; for
+              now, ask our front desk about same-day pickup.
+            </p>
+            <a href="#contact" class="btn btn-outline">Ask About the Shop</a>
+          </div>
+          <img
+            class="shop-badge"
+            src="images/shop-category-icon.jpg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
 
+        <div class="shop-category-grid">
+          <div class="shop-category">
+            <img src="images/pawprint.png" alt="" aria-hidden="true" />
+            <h4>Food &amp; Treats</h4>
+            <span>Vet-recommended diets</span>
+          </div>
+          <div class="shop-category">
+            <img src="images/pawprint.png" alt="" aria-hidden="true" />
+            <h4>Toys &amp; Enrichment</h4>
+            <span>For busy paws and minds</span>
+          </div>
+          <div class="shop-category">
+            <img src="images/pawprint.png" alt="" aria-hidden="true" />
+            <h4>Grooming</h4>
+            <span>Shampoos, brushes &amp; more</span>
+          </div>
+          <div class="shop-category">
+            <img src="images/pawprint.png" alt="" aria-hidden="true" />
+            <h4>Health &amp; Wellness</h4>
+            <span>Supplements &amp; supplies</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ===================== Appointment ===================== -->
+    <section class="appointment" id="appointment">
+      <div class="container">
+        <div class="appointment-info">
+          <p class="kicker">Book a visit</p>
+          <h2>Schedule an Appointment</h2>
+          <p>
+            Tell us a little about your pet and pick the service you need.
+            Our front desk will confirm your time by phone.
+          </p>
+          <ul class="info-list">
+            <li>
+              <span class="dot" aria-hidden="true"></span>
+              Same-day and next-day slots are usually available.
+            </li>
+            <li>
+              <span class="dot" aria-hidden="true"></span>
+              Please bring any prior medical records for new patients.
+            </li>
+            <li>
+              <span class="dot" aria-hidden="true"></span>
+              Open Mon&ndash;Sat, 9:00 AM&ndash;7:00 PM. Emergencies:
+              24&#8202;/&#8202;7.
+            </li>
+          </ul>
+        </div>
 
+        <form class="appointment-form" id="appointmentForm" novalidate>
+          <div class="form-success" id="appointmentSuccess" role="status">
+            <span>&#10003;</span>
+            <span
+              >Request received! We'll call you shortly to confirm your
+              appointment.</span
+            >
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="ownerName">Your Name</label>
+              <input type="text" id="ownerName" name="ownerName" required />
+            </div>
+            <div class="field">
+              <label for="ownerPhone">Phone Number</label>
+              <input type="tel" id="ownerPhone" name="ownerPhone" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="petName">Pet's Name</label>
+              <input type="text" id="petName" name="petName" required />
+            </div>
+            <div class="field">
+              <label for="petType">Pet Type</label>
+              <select id="petType" name="petType" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Bird</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="serviceType">Service Needed</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Care Advice</option>
+                <option>Veterinary Checkup</option>
+                <option>Emergency Care</option>
+                <option>Grooming</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="visitDate">Preferred Date</label>
+              <input type="date" id="visitDate" name="visitDate" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="notes">Anything we should know?</label>
+            <textarea
+              id="notes"
+              name="notes"
+              placeholder="Symptoms, past visits, or questions for the vet…"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Request Appointment
+          </button>
+          <p class="form-note">
+            We'll never share your information. This form doesn't call
+            emergency services &mdash; if it's urgent, please phone us
+            directly.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ===================== Contact ===================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-info">
+          <div class="section-head">
+            <p class="kicker">Get in touch</p>
+            <h2>We're happy to answer your questions</h2>
+            <p>Reach out by phone, email, or stop by the clinic.</p>
+          </div>
+
+          <div class="contact-card">
+            <span class="icon" aria-hidden="true">&#128205;</span>
+            <div>
+              <h4>Visit the Clinic</h4>
+              <p>123 Companion Avenue, Springfield</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="icon" aria-hidden="true">&#128222;</span>
+            <div>
+              <h4>Call Us</h4>
+              <a href="tel:+10000000000">(000) 000-0000</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="icon" aria-hidden="true">&#9993;</span>
+            <div>
+              <h4>Email Us</h4>
+              <a href="mailto:hello@worldpetcare.example">hello@worldpetcare.example</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="icon" aria-hidden="true">&#128337;</span>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon&ndash;Sat, 9:00 AM&ndash;7:00 PM &middot; Emergencies 24/7</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="appointment-form" id="queryForm" novalidate>
+          <div class="form-success" id="querySuccess" role="status">
+            <span>&#10003;</span>
+            <span>Thanks! A member of our team will reply within one business day.</span>
+          </div>
+
+          <div class="field">
+            <label for="queryName">Name</label>
+            <input type="text" id="queryName" name="queryName" required />
+          </div>
+          <div class="field">
+            <label for="queryEmail">Email</label>
+            <input type="email" id="queryEmail" name="queryEmail" required />
+          </div>
+          <div class="field">
+            <label for="queryMessage">Your Question</label>
+            <textarea id="queryMessage" name="queryMessage" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="" aria-hidden="true" />
+          <span>World Pet Care</span>
+        </div>
+        <p>
+          Compassionate veterinary care and honest advice for the animals
+          who share your home.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="X (formerly Twitter)">x</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#appointment">Appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Care Advice</a></li>
+          <li><a href="#services">Veterinary Checkup</a></li>
+          <li><a href="#services">Emergency Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>123 Companion Avenue, Springfield</li>
+          <li><a href="tel:+10000000000">(000) 000-0000</a></li>
+          <li><a href="mailto:hello@worldpetcare.example">hello@worldpetcare.example</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> World Pet Care. All rights reserved.</span>
+      <span>Built with care, for pets and their people.</span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+
+  <!-- ===================== Auth Modal ===================== -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">&times;</button>
+
+      <div class="modal-tabs" role="tablist">
+        <button
+          role="tab"
+          id="tabLogin"
+          class="modal-tab active"
+          data-tab="login"
+        >
+          Log In
+        </button>
+        <button role="tab" id="tabSignup" class="modal-tab" data-tab="signup">
+          Sign Up
+        </button>
+      </div>
+
+      <h2 class="modal-title" id="modalTitle">Welcome back</h2>
+
+      <form class="modal-form" id="loginForm" data-panel="login">
+        <div class="field">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" required />
+        </div>
+        <div class="field">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" minlength="6" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log In</button>
+        <p class="modal-note">Demo form &mdash; no account is created.</p>
+      </form>
+
+      <form class="modal-form" id="signupForm" data-panel="signup" hidden>
+        <div class="field">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" required />
+        </div>
+        <div class="field">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" required />
+        </div>
+        <div class="field">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" minlength="6" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        <p class="modal-note">Demo form &mdash; no account is created.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>
